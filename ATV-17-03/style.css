@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+.topo-site{
+    text-align: center;
+    font-size: 20px;
+    background-color: #1e90ff;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+}
+
+main{
+    background-color: #363636;
+    border-radius: 10px;
+    padding: 30px;
+    border: 0;
+}
+
+.conteudo-site{
+    padding-top: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.txt-meio{
+    color: #fff;
+    margin: 20px 0;
+    text-align: center;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.btn-meio{
+    text-align: center;
+}
+
+.btn-meio .btn-envio{
+    color: #fff;
+    border-radius: 15px;
+    background-color: #FF4500;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.card-conteudo{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    text-align: center;
+    border: 0;
+    background-color: #202020;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 8 #363636;
+}
+
+.card-conteudo h3{
+    font-size: 20px;
+}
+
+.card-conteudo p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+img{
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .cards{
+        width: 95%;
+    }
+    
+}

@@ -1,0 +1,363 @@
+/* Estilo Geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 14px;
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+    padding-top: 120px;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(123, 18, 221);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px rgb(163, 67, 253);
+    transform: scale(1.05);
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #7B12DD;
+    font-size: 38px;
+}
+
+/* Estilo do Cabeçalho */
+header{
+    padding: 40px 4%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+header > .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Estilo do topo do site */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    font-size: 42px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #7B12DD;
+    font-size: 38px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    font-size: 18px;
+    margin: 40px 0;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    border-radius: 50%;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* Estilo das habilidades*/
+section.habilidades{
+    padding: 40px 4%;
+}
+
+section.habilidades .flex{
+    gap: 60px;
+}
+
+.habilidades .habilidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.habilidades .habilidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.habilidades .habilidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.habilidades .habilidades-box p{
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Estilo sobre mim */
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    font-size: 40px;
+    color: #7B12DD;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.sobre .txt-sobre .btn-contato{
+    border: none;
+    margin: 0 5px;
+}
+
+.sobre .img-sobre img{
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.sobre .img-sobre img:hover{
+    box-shadow: 0px 0px 8px rgb(163, 67, 253);
+    transform: scale(1.05);
+}
+
+/* Estilo dos projetos */
+section.projetos{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.projetos .flex{
+    justify-content: space-around;
+}
+
+.img-proj{
+    position: relative;
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s;
+    margin-top: 40px;
+}
+
+.img-proj .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-proj:hover .overlay {
+    opacity: 1;
+}
+
+.img-proj:hover {
+    filter: blur(0.5px);
+}
+
+.img-proj .text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+h2.sub-titulo{
+    margin-top: 40px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+h2.sub-titulo a, span{
+    text-decoration: none;
+    color: #7B12DD;
+    font-size: 24px;
+}
+
+/* Estilo do formuladio */
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 140px;
+    background-color: #7B12DD;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* Estilo do rodape */
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+
+.borda{
+    border-top: 2px solid #7B12DD;
+}
+
+
+footer .line-footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .line-footer.borda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .line-footer.borda p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
