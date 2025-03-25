@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="variable.css"> -->
     <link rel="stylesheet" href="style.css">
     <title>ATV.PW</title>
 </head>
-<body>
+<body data-theme="dark">
     <header class="topo-site">
         <h1>SETIF 2025 - A Revolução da Tecnologia</h1>
     </header>
@@ -25,6 +26,8 @@
                 <div class="btn-meio">
                     <button class="btn-envio">Inscreva-se</button>
                     <button class="btn-envio">Saiba Mais</button>
+                    <button id="btAlterarTema" onclick="alterarTema()" class="btn-envio">Light</button>
+                    <button onclick="buscarInscritos()" class="btn-envio">Mostrar Inscritos</button>
                 </div>
             </div>
             <div class="cards">
@@ -57,6 +60,14 @@
                 </div>
             </div>
         </div>
+    
+        <div id="inscritos">
+
+        </div>
+
     </main>
+
+    <script src="js/index.js"></script>
+
 </body>
 </html>

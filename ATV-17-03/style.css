@@ -1,7 +1,10 @@
+@import url('variable.css');
+
 *{
     margin: 0;
     padding: 0;
     font-family: monospace;
+    color: var(--text-color);
 }
 
 .topo-site{
@@ -11,12 +14,12 @@
 }
 
 body{
-    background-color: black;
+    background-color: var(--bg-color-body);
     text-align: center;
 }
 
 main{
-    background-color: #363636;
+    background-color: var(--bg-color-container);
     border-radius: 10px;
     padding: 30px;
     border: 0;
@@ -29,7 +32,6 @@ main{
 }
 
 .txt-meio{
-    color: #fff;
     margin: 20px 0;
     text-align: center;
     line-height: 2;
@@ -49,6 +51,12 @@ main{
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
+    transition: .2s;
+}
+
+.btn-meio .btn-envio:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px #dd7048;
 }
 
 .cards{
@@ -59,7 +67,6 @@ main{
 }
 
 .card-conteudo{
-    color: #fff;
     display: flex;
     flex-direction: column;
     width: 270px;
