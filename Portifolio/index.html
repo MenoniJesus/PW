@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pr-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Portifolio-PW</title>
 </head>
+
 <body>
     <header>
         <div id="topo" class="interface">
@@ -31,6 +33,28 @@
                     <button>Contato</button>
                 </a>
             </div>
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <h2>M</h2>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <h2>X</h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div>
         </div>
     </header>
 
@@ -40,9 +64,10 @@
                 <div class="flex">
                     <div class="txt-topo-site">
                         <h1>Leandro Menoni<span>.</span></h1>
-                        <p>Sou estudante do 3º ano de Engenharia de Software no IFPR. Adoro aprender coisas novas e me 
-                        desafiar constantemente. Nos meus momentos livres, curto jogar. Se quiser bater um papo ou jogar 
-                        junto, sinta-se à vontade para me adicionar no Discord ou na Steam. Tenha um ótimo dia!</p>
+                        <p>Sou estudante do 3º ano de Engenharia de Software no IFPR. Adoro aprender coisas novas e me
+                            desafiar constantemente. Nos meus momentos livres, curto jogar. Se quiser bater um papo ou
+                            jogar
+                            junto, sinta-se à vontade para me adicionar no Discord ou na Steam. Tenha um ótimo dia!</p>
 
                         <div class="btn-contato">
                             <a href="#contato">
@@ -65,16 +90,17 @@
                     <div class="habilidades-box">
                         <img src="img/terminal.png" alt="Logo de código">
                         <h3>Experiência Técnica</h3>
-                        <p>Já tive contato com diversas tecnologias, como JavaScript, Java, React Native, 
-                        Arduino e C++. Atualmente, estou participando de um projeto de desenvolvimento de 
-                        games utilizando C++, além de planejar alguns projetos menores com amigos para ganhar 
-                        experiência e explorar novas ideias.</p>
+                        <p>Já tive contato com diversas tecnologias, como JavaScript, Java, React Native,
+                            Arduino e C++. Atualmente, estou participando de um projeto de desenvolvimento de
+                            games utilizando C++, além de planejar alguns projetos menores com amigos para ganhar
+                            experiência e explorar novas ideias.</p>
                     </div>
                     <div class="habilidades-box">
                         <img src="img/hand-shake.png" alt="Logo de emoji">
                         <h3>Habilidades Pessoais</h3>
                         <p>Trabalho bem em equipe e valorizo uma comunicação clara e eficaz. Sou curioso, adaptável
-                         e gosto de encontrar soluções criativas para problemas. Sempre aberto a novas ideias e desafios!</p>
+                            e gosto de encontrar soluções criativas para problemas. Sempre aberto a novas ideias e
+                            desafios!</p>
                     </div>
                 </div>
             </div>
@@ -89,20 +115,30 @@
 
                     <div class="txt-sobre">
                         <h2>Opa, Mochi Mochi.<span>Bão?</span></h2>
-                        <p>E aí! Sou <strong>Leandro Menoni</strong>, estudante de <strong>Engenharia de Software</strong>, 
-                        apaixonado por tecnologia, inovação e desenvolvimento de games. Atualmente, estou no <strong>segundo ano da 
-                        faculdade</strong> e sempre buscando desafios que me façam evoluir.</p>
-                        <p>Tive a incrível experiência de um <strong>intercâmbio em Portugal</strong>, expandindo horizontes e absorvendo 
-                        novas perspectivas sobre tecnologia e colaboração global. Além disso, conquistei minha certificação <strong>AWS Cloud Practitioner</strong>, 
-                        fortalecendo meu conhecimento em computação em nuvem.</p>
-                        <p>No momento, estou envolvido em um projeto de <strong>desenvolvimento de games</strong>, explorando mecânicas, narrativas e 
-                        tudo que transforma uma ideia em uma experiência imersiva.</p>
-                        <p>Quando não estou programando, provavelmente estou <strong>jogando, assistindo animes ou debatendo sobre hardware e 
-                        jogos</strong> com amigos.</p>
+                        <p>E aí! Sou <strong>Leandro Menoni</strong>, estudante de <strong>Engenharia de
+                                Software</strong>,
+                            apaixonado por tecnologia, inovação e desenvolvimento de games. Atualmente, estou no
+                            <strong>segundo ano da
+                                faculdade</strong> e sempre buscando desafios que me façam evoluir.
+                        </p>
+                        <p>Tive a incrível experiência de um <strong>intercâmbio em Portugal</strong>, expandindo
+                            horizontes e absorvendo
+                            novas perspectivas sobre tecnologia e colaboração global. Além disso, conquistei minha
+                            certificação <strong>AWS Cloud Practitioner</strong>,
+                            fortalecendo meu conhecimento em computação em nuvem.</p>
+                        <p>No momento, estou envolvido em um projeto de <strong>desenvolvimento de games</strong>,
+                            explorando mecânicas, narrativas e
+                            tudo que transforma uma ideia em uma experiência imersiva.</p>
+                        <p>Quando não estou programando, provavelmente estou <strong>jogando, assistindo animes ou
+                                debatendo sobre hardware e
+                                jogos</strong> com amigos.</p>
                         <div class="btn-social">
-                            <a href="https://www.instagram.com/menoni.sla/" target="_blank"><img src="img/instagram.png" alt="Link instagram"></a>
-                            <a href="https://www.linkedin.com/in/menonileandro" target="_blank"><img src="img/linkedin.png" alt="Link linkedin"></a>
-                            <a href="https://github.com/MenoniJesus" target="_blank"><img src="img/github.png" alt="Link github"></a>
+                            <a href="https://www.instagram.com/menoni.sla/" target="_blank"><img src="img/instagram.png"
+                                    alt="Link instagram"></a>
+                            <a href="https://www.linkedin.com/in/menonileandro" target="_blank"><img
+                                    src="img/linkedin.png" alt="Link linkedin"></a>
+                            <a href="https://github.com/MenoniJesus" target="_blank"><img src="img/github.png"
+                                    alt="Link github"></a>
                         </div>
                     </div>
                 </div>
@@ -113,35 +149,41 @@
             <div class="interface">
                 <h2 class="titulo">MEUS <span>PROJETOS:</span></h2>
                 <div class="flex">
-                    <a href="https://github.com/MenoniJesus/Simulador-Pipeline" target="_blank" class="img-proj" style="background-image: url(img/SimuladorPipeline.jpg);">
+                    <a href="https://github.com/MenoniJesus/Simulador-Pipeline" target="_blank" class="img-proj"
+                        style="background-image: url(img/SimuladorPipeline.jpg);">
                         <div class="overlay">
                             <div class="text">Simulador Pipeline<br>C</div>
                         </div>
                     </a>
-                    <a href="https://github.com/MenoniJesus/Game" target="_blank" class="img-proj" style="background-image: url(img/FundoIFTECH.png);">
+                    <a href="https://github.com/MenoniJesus/Game" target="_blank" class="img-proj"
+                        style="background-image: url(img/FundoIFTECH.png);">
                         <div class="overlay">
                             <div class="text">Game<br>C++</div>
                         </div>
                     </a>
-                    <a href="https://github.com/MenoniJesus/Desafio-CompassUOL-Wordpress" target="_blank" class="img-proj" style="background-image: url(img/ProjetoCompass.png);">
+                    <a href="https://github.com/MenoniJesus/Desafio-CompassUOL-Wordpress" target="_blank"
+                        class="img-proj" style="background-image: url(img/ProjetoCompass.png);">
                         <div class="overlay">
                             <div class="text">Desafio CompassUOL Wordpress<br>Shell | Dockerfile</div>
                         </div>
                     </a>
                 </div>
-                <h2 class="sub-titulo">OUTROS <a href="https://github.com/MenoniJesus?tab=repositories"><span>REPOSITORIOS.</span></span></a></h2>
+                <h2 class="sub-titulo">OUTROS <a
+                        href="https://github.com/MenoniJesus?tab=repositories"><span>REPOSITORIOS.</span></span></a>
+                </h2>
             </div>
         </section>
 
         <section id="contato" class="formulario">
             <div class="interface">
                 <h2 class="titulo">BORA <span>CONVERSAR!</span></h2>
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
-                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Seu nome completo:" required>
+                    <input type="email" name="email" placeholder="Seu e-mail:" required>
+                    <textarea name="message" placeholder="Sua mensagem" required></textarea>
+                    <input type="submit" value="ENVIAR" class="btn-enviar">
                 </form>
+                <div id="status"></div>
             </div>
         </section>
 
@@ -168,7 +210,9 @@
         </div>
     </footer>
 
-    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/index.js" defer></script>
 
 </body>
+
 </html>

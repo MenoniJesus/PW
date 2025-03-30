@@ -1,5 +1,5 @@
 /* Estilo Geral */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,22 +7,22 @@
     font-size: 14px;
 }
 
-body{
+body {
     background-color: #000;
     height: 100vh;
     padding-top: 120px;
 }
 
-.interface{
+.interface {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.btn-contato button{
+.btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -33,24 +33,25 @@ body{
     transition: .2s;
 }
 
-button:hover, form .btn-enviar input:hover{
+button:hover,
+form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px rgb(163, 67, 253);
     transform: scale(1.05);
 }
 
-h2.titulo{
+h2.titulo {
     color: #fff;
     font-size: 38px;
     text-align: center;
 }
 
-h2.titulo span{
+h2.titulo span {
     color: #7B12DD;
     font-size: 38px;
 }
 
 /* Estilo do Cabeçalho */
-header{
+header {
     padding: 40px 4%;
     position: fixed;
     top: 0;
@@ -59,56 +60,120 @@ header{
     z-index: 1000;
 }
 
-header > .interface{
+header>.interface {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header a{
+header a {
     color: #5c5c5c;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
-header a:hover{
+header a:hover {
     color: #ffffff;
     transform: scale(1.05);
 }
 
-header nav ul{
+header nav ul {
     list-style-type: none;
 }
 
-header nav ul li{
+header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
 
+/* Estilo menu-mobile */
+.btn-abrir-menu h2 {
+    color: #7B12DD;
+    font-size: 40px;
+    display: none;
+}
+
+.menu-mobile {
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu~.overlay-menu {
+    display: block;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 4%;
+}
+
+.menu-mobile .btn-fechar h2 {
+    color: #7B12DD;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #7B12DD;
+    color: #000;
+}
+
+.overlay-menu {
+    background-color: #000000b7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
 /* Estilo do topo do site */
-section.topo-do-site{
+section.topo-do-site {
     padding: 40px 4%;
 }
 
-section.topo-do-site .flex{
+section.topo-do-site .flex {
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
-.topo-do-site h1{
+.topo-do-site h1 {
     font-size: 42px;
     color: #fff;
     line-height: 40px;
 }
 
-.topo-do-site .txt-topo-site h1 span{
+.topo-do-site .txt-topo-site h1 span {
     color: #7B12DD;
     font-size: 38px;
 }
 
-.topo-do-site .txt-topo-site p{
+.topo-do-site .txt-topo-site p {
     color: #fff;
     font-size: 18px;
     margin: 40px 0;
@@ -116,31 +181,32 @@ section.topo-do-site .flex{
     line-height: 1.5;
 }
 
-.topo-do-site .img-topo-site img{
+.topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     border-radius: 50%;
 }
 
-@keyframes flutuar{
-    0%{
+@keyframes flutuar {
+    0% {
         top: 0;
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 }
 
 /* Estilo das habilidades*/
-section.habilidades{
+section.habilidades {
     padding: 40px 4%;
 }
 
-section.habilidades .flex{
+section.habilidades .flex {
     gap: 60px;
 }
 
-.habilidades .habilidades-box{
+.habilidades .habilidades-box {
     color: #fff;
     padding: 40px;
     border-radius: 20px;
@@ -148,80 +214,80 @@ section.habilidades .flex{
     transition: .2s;
 }
 
-.habilidades .habilidades-box:hover{
+.habilidades .habilidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #ffffff78;
 }
 
-.habilidades .habilidades-box h3{
+.habilidades .habilidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
 }
 
-.habilidades .habilidades-box p{
+.habilidades .habilidades-box p {
     line-height: 1.5;
     text-align: justify;
 }
 
 /* Estilo sobre mim */
-section.sobre{
+section.sobre {
     padding: 80px 4%;
 }
 
-section.sobre .flex{
+section.sobre .flex {
     align-items: center;
     gap: 60px;
 }
 
-.sobre .txt-sobre{
+.sobre .txt-sobre {
     color: #fff;
 }
 
-.sobre .txt-sobre h2{
+.sobre .txt-sobre h2 {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 30px;
 }
 
-.sobre .txt-sobre h2 span{
+.sobre .txt-sobre h2 span {
     font-size: 40px;
     color: #7B12DD;
     display: block;
 }
 
-.sobre .txt-sobre p{
+.sobre .txt-sobre p {
     margin: 20px 0;
     text-align: justify;
     line-height: 1.5;
 }
 
-.sobre .txt-sobre .btn-contato{
+.sobre .txt-sobre .btn-contato {
     border: none;
     margin: 0 5px;
 }
 
-.sobre .img-sobre img{
+.sobre .img-sobre img {
     border-radius: 20px;
     cursor: pointer;
     transition: .2s;
 }
 
-.sobre .img-sobre img:hover{
+.sobre .img-sobre img:hover {
     box-shadow: 0px 0px 8px rgb(163, 67, 253);
     transform: scale(1.05);
 }
 
 /* Estilo dos projetos */
-section.projetos{
+section.projetos {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
 }
 
-section.projetos .flex{
+section.projetos .flex {
     justify-content: space-around;
 }
 
-.img-proj{
+.img-proj {
     position: relative;
     width: 360px;
     height: 460px;
@@ -263,25 +329,25 @@ section.projetos .flex{
     padding: 10px;
 }
 
-h2.sub-titulo{
+h2.sub-titulo {
     margin-top: 40px;
     color: #fff;
     font-size: 24px;
     text-align: center;
 }
 
-h2.sub-titulo a, span{
+h2.sub-titulo a, span {
     text-decoration: none;
     color: #7B12DD;
     font-size: 24px;
 }
 
 /* Estilo do formuladio */
-section.formulario{
+section.formulario {
     padding: 80px 4%;
 }
 
-form{
+form {
     max-width: 500px;
     margin: 0 auto;
     display: flex;
@@ -291,7 +357,7 @@ form{
     margin-top: 40px;
 }
 
-form input, form textarea{
+form input, form textarea {
     width: 100%;
     background-color: #242424;
     border: 0;
@@ -302,47 +368,50 @@ form input, form textarea{
     font-size: 18px;
 }
 
-form textarea{
+form textarea {
     resize: none;
     max-height: 200px;
 }
 
-form .btn-enviar{
-    margin-top: 20px;
+#status {
     text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
 }
 
-form .btn-enviar input{
-    width: 140px;
+.btn-enviar {
     background-color: #7B12DD;
-    color: #000;
     font-weight: 700;
     cursor: pointer;
-    transition: .2s;
+    transition: 0.2s;
+    color: #000;
+}
+
+.btn-enviar:hover {
+    box-shadow: 0px 0px 8px rgb(163, 67, 253);
+    transform: scale(1.05);
 }
 
 /* Estilo do rodape */
-footer{
+footer {
     padding: 40px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
 }
 
-footer .flex{
+footer .flex {
     justify-content: space-between;
     align-items: center;
 }
 
-footer .line-footer{
+footer .line-footer {
     padding: 20px 0;
 }
 
-
-.borda{
+.borda {
     border-top: 2px solid #7B12DD;
 }
 
-
-footer .line-footer a{
+footer .line-footer a {
     color: #fff;
     text-decoration: none;
 }
@@ -360,4 +429,126 @@ footer .line-footer.borda p {
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+@media screen and (max-width: 1310px) {
+
+    /* Gerais*/
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 28px;
+        line-height: 4rem;
+    }
+
+    h2.titulo span {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    /* Cabecalho */
+    .btn-abrir-menu h2 {
+        display: flex;
+    }
+
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+
+    /* Topo do site */
+    section.topo-do-site {
+        padding: 40px 10%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 26px;
+        white-space: nowrap;
+    }
+
+    .topo-do-site .txt-topo-site h1 span {
+        font-size: 24px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    section.topo-do-sete .flex {
+        gap: 40px
+    }
+
+    /* Habilidades */
+    section.habilidades {
+        padding: 40px 8%;
+    }
+
+    .habilidades .habilidades-box h3 {
+        font-size: 24px
+    }
+
+    /* Sobre */
+    .sobre .txt-sobre h2 {
+        font-size: 22px;
+        line-height: 35px;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    .sobre .txt-sobre h2 span {
+        font-size: 22px;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+    /* Projetos */
+    section.projetos {
+        padding: 80px 8%;
+    }
+
+    .img-proj {
+        position: relative;
+        width: 100%;
+        max-width: 360px;
+        height: 460px;
+        background-size: cover;
+        background-position: center;
+        transition: 0.5s;
+        margin: 0 auto;
+    }
+
+    section.projetos .flex {
+        gap: 60px
+    }
+
+    h2.sub-titulo a,
+    span {
+        font-size: 24px;
+        line-height: 3rem;
+    }
+
+    /* Rodape*/
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+    .line-footer.borda p a {
+        font-size: 10px;
+    }
 }
