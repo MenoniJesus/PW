@@ -1,3 +1,5 @@
+@import url(variables.css);
+
 /* Estilo Geral */
 * {
     margin: 0;
@@ -8,7 +10,7 @@
 }
 
 body {
-    background-color: #000;
+    background-color: var(--black);
     height: 100vh;
     padding-top: 120px;
 }
@@ -26,7 +28,7 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: rgb(123, 18, 221);
+    background-color: var(--purple);
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -35,18 +37,18 @@ body {
 
 button:hover,
 form .btn-enviar input:hover {
-    box-shadow: 0px 0px 8px rgb(163, 67, 253);
+    box-shadow: 0px 0px 8px var(--lite-purple);
     transform: scale(1.05);
 }
 
 h2.titulo {
-    color: #fff;
+    color: var(--white);
     font-size: 38px;
     text-align: center;
 }
 
 h2.titulo span {
-    color: #7B12DD;
+    color: var(--purple);
     font-size: 38px;
 }
 
@@ -56,7 +58,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--trans-black);
     z-index: 1000;
 }
 
@@ -67,14 +69,14 @@ header>.interface {
 }
 
 header a {
-    color: #5c5c5c;
+    color: var(--gray);
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
 header a:hover {
-    color: #ffffff;
+    color: var(--white);
     transform: scale(1.05);
 }
 
@@ -89,13 +91,13 @@ header nav.menu-desktop ul li {
 
 /* Estilo menu-mobile */
 .btn-abrir-menu h2 {
-    color: #7B12DD;
+    color: var(--purple);
     font-size: 40px;
     display: none;
 }
 
 .menu-mobile {
-    background-color: #000;
+    background-color: var(--black);
     height: 100vh;
     position: fixed;
     top: 0;
@@ -119,7 +121,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile .btn-fechar h2 {
-    color: #7B12DD;
+    color: var(--purple);
     font-size: 30px;
 }
 
@@ -128,7 +130,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile nav ul li a {
-    color: #fff;
+    color: var(--white);
     font-size: 20px;
     font-weight: 300;
     padding: 20px 8%;
@@ -136,12 +138,12 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile nav ul li a:hover {
-    background-color: #7B12DD;
-    color: #000;
+    background-color: var(--purple);
+    color: var(--black);
 }
 
 .overlay-menu {
-    background-color: #000000b7;
+    background-color: var(--trans-black2);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -164,17 +166,17 @@ section.topo-do-site .flex {
 
 .topo-do-site h1 {
     font-size: 42px;
-    color: #fff;
+    color: var(--white);
     line-height: 40px;
 }
 
 .topo-do-site .txt-topo-site h1 span {
-    color: #7B12DD;
+    color: var(--purple);
     font-size: 38px;
 }
 
 .topo-do-site .txt-topo-site p {
-    color: #fff;
+    color: var(--white);
     font-size: 18px;
     margin: 40px 0;
     text-align: justify;
@@ -207,7 +209,7 @@ section.habilidades .flex {
 }
 
 .habilidades .habilidades-box {
-    color: #fff;
+    color: var(--white);
     padding: 40px;
     border-radius: 20px;
     margin-top: 45px;
@@ -216,7 +218,7 @@ section.habilidades .flex {
 
 .habilidades .habilidades-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px #ffffff78;
+    box-shadow: 0 0 20px var(--lite-gray);
 }
 
 .habilidades .habilidades-box h3 {
@@ -240,7 +242,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre {
-    color: #fff;
+    color: var(--white);
 }
 
 .sobre .txt-sobre h2 {
@@ -251,7 +253,7 @@ section.sobre .flex {
 
 .sobre .txt-sobre h2 span {
     font-size: 40px;
-    color: #7B12DD;
+    color: var(--purple);
     display: block;
 }
 
@@ -273,14 +275,14 @@ section.sobre .flex {
 }
 
 .sobre .img-sobre img:hover {
-    box-shadow: 0px 0px 8px rgb(163, 67, 253);
+    box-shadow: 0px 0px 8px var(--lite-purple);
     transform: scale(1.05);
 }
 
 /* Estilo dos projetos */
 section.projetos {
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    box-shadow: 0 0 40px 10px var(--trans-gray);
 }
 
 section.projetos .flex {
@@ -307,7 +309,7 @@ section.projetos .flex {
     width: 100%;
     opacity: 0;
     transition: 0.5s ease;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--trans-black3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,7 +324,7 @@ section.projetos .flex {
 }
 
 .img-proj .text {
-    color: white;
+    color: var(--white);
     font-size: 20px;
     text-align: center;
     line-height: 1.5;
@@ -331,14 +333,14 @@ section.projetos .flex {
 
 h2.sub-titulo {
     margin-top: 40px;
-    color: #fff;
+    color: var(--white);
     font-size: 24px;
     text-align: center;
 }
 
 h2.sub-titulo a, span {
     text-decoration: none;
-    color: #7B12DD;
+    color: var(--purple);
     font-size: 24px;
 }
 
@@ -359,12 +361,12 @@ form {
 
 form input, form textarea {
     width: 100%;
-    background-color: #242424;
+    background-color: var(--form-background);
     border: 0;
     outline: 0;
     padding: 20px 15px;
     border-radius: 15px;
-    color: #fff;
+    color: var(--form-font);
     font-size: 18px;
 }
 
@@ -380,22 +382,22 @@ form textarea {
 }
 
 .btn-enviar {
-    background-color: #7B12DD;
+    background-color: var(--purple);
     font-weight: 700;
     cursor: pointer;
     transition: 0.2s;
-    color: #000;
+    color: var(--black);
 }
 
 .btn-enviar:hover {
-    box-shadow: 0px 0px 8px rgb(163, 67, 253);
+    box-shadow: 0px 0px 8px var(--lite-purple);
     transform: scale(1.05);
 }
 
 /* Estilo do rodape */
 footer {
     padding: 40px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    box-shadow: 0 0 40px 10px var(--transparent);
 }
 
 footer .flex {
@@ -408,11 +410,11 @@ footer .line-footer {
 }
 
 .borda {
-    border-top: 2px solid #7B12DD;
+    border-top: 2px solid var(--purple);
 }
 
 footer .line-footer a {
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -431,124 +433,9 @@ footer .line-footer.borda p {
     gap: 10px;
 }
 
-@media screen and (max-width: 1310px) {
-
-    /* Gerais*/
-    .flex {
-        flex-direction: column;
-    }
-
-    .topo-do-site .flex {
-        flex-direction: column-reverse;
-    }
-
-    h2.titulo {
-        font-size: 28px;
-        line-height: 4rem;
-    }
-
-    h2.titulo span {
-        font-size: 28px;
-        text-align: center;
-    }
-
-    /* Cabecalho */
-    .btn-abrir-menu h2 {
-        display: flex;
-    }
-
-    .menu-desktop, .btn-contato {
-        display: none;
-    }
-
-    /* Topo do site */
-    section.topo-do-site {
-        padding: 40px 10%;
-    }
-
-    .topo-do-site h1 {
-        font-size: 26px;
-        white-space: nowrap;
-    }
-
-    .topo-do-site .txt-topo-site h1 span {
-        font-size: 24px;
-    }
-
-    .topo-do-site .img-topo-site img {
-        width: 100%;
-    }
-
-    section.topo-do-sete .flex {
-        gap: 40px
-    }
-
-    /* Habilidades */
-    section.habilidades {
-        padding: 40px 8%;
-    }
-
-    .habilidades .habilidades-box h3 {
-        font-size: 24px
-    }
-
-    /* Sobre */
-    .sobre .txt-sobre h2 {
-        font-size: 22px;
-        line-height: 35px;
-        white-space: nowrap;
-        text-align: center;
-    }
-
-    .sobre .txt-sobre h2 span {
-        font-size: 22px;
-    }
-
-    .btn-social {
-        text-align: center;
-    }
-
-    .img-sobre img {
-        width: 100%;
-    }
-
-    /* Projetos */
-    section.projetos {
-        padding: 80px 8%;
-    }
-
-    .img-proj {
-        position: relative;
-        width: 100%;
-        max-width: 360px;
-        height: 460px;
-        background-size: cover;
-        background-position: center;
-        transition: 0.5s;
-        margin: 0 auto;
-    }
-
-    section.projetos .flex {
-        gap: 60px
-    }
-
-    h2.sub-titulo a,
-    span {
-        font-size: 24px;
-        line-height: 3rem;
-    }
-
-    /* Rodape*/
-    footer .flex {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    footer .line-footer {
-        text-align: center;
-    }
-
-    .line-footer.borda p a {
-        font-size: 10px;
-    }
+#btAlterarTema {
+    background-color: transparent;
+    border: none; 
+    padding: 0;
+    cursor: pointer; 
 }

@@ -1,0 +1,121 @@
+@media screen and (max-width: 1310px) {
+
+    /* Gerais*/
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo {
+        font-size: 28px;
+        line-height: 4rem;
+    }
+
+    h2.titulo span {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    /* Cabecalho */
+    .btn-abrir-menu h2 {
+        display: flex;
+    }
+
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+
+    /* Topo do site */
+    section.topo-do-site {
+        padding: 40px 10%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 26px;
+        white-space: nowrap;
+    }
+
+    .topo-do-site .txt-topo-site h1 span {
+        font-size: 24px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    section.topo-do-sete .flex {
+        gap: 40px
+    }
+
+    /* Habilidades */
+    section.habilidades {
+        padding: 40px 8%;
+    }
+
+    .habilidades .habilidades-box h3 {
+        font-size: 24px
+    }
+
+    /* Sobre */
+    .sobre .txt-sobre h2 {
+        font-size: 22px;
+        line-height: 35px;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    .sobre .txt-sobre h2 span {
+        font-size: 22px;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    .img-sobre img {
+        width: 100%;
+    }
+
+    /* Projetos */
+    section.projetos {
+        padding: 80px 8%;
+    }
+
+    .img-proj {
+        position: relative;
+        width: 100%;
+        max-width: 360px;
+        height: 460px;
+        background-size: cover;
+        background-position: center;
+        transition: 0.5s;
+        margin: 0 auto;
+    }
+
+    section.projetos .flex {
+        gap: 60px
+    }
+
+    h2.sub-titulo a,
+    span {
+        font-size: 24px;
+        line-height: 3rem;
+    }
+
+    /* Rodape*/
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+    .line-footer.borda p a {
+        font-size: 10px;
+    }
+}
