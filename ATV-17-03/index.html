@@ -25,7 +25,7 @@
                 </div>
                 <div class="btn-meio">
                     <button class="btn-envio">Inscreva-se</button>
-                    <button class="btn-envio">Saiba Mais</button>
+                    <button id="saiba-mais" class="btn-envio">Saiba Mais</button>
                     <button id="btAlterarTema" onclick="alterarTema()" class="btn-envio">Light</button>
                     <button onclick="buscarInscritos()" class="btn-envio">Mostrar Inscritos</button>
                 </div>
@@ -66,6 +66,14 @@
         </div>
 
     </main>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="fechar-modal" class="fechar">&times;</span>
+            <h1>SETIF</h1>
+            <p>A SETIF 2025 será realizada no dia 10/11/2025</p>
+        </div>
+    </div>
 
     <script src="js/index.js"></script>
 
