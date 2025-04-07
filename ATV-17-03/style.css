@@ -42,7 +42,7 @@ main{
     text-align: center;
 }
 
-.btn-meio .btn-envio{
+.btn-envio{
     color: #fff;
     border-radius: 15px;
     background-color: #FF4500;
@@ -54,7 +54,7 @@ main{
     transition: .2s;
 }
 
-.btn-meio .btn-envio:hover{
+.btn-envio:hover{
     transform: scale(1.05);
     box-shadow: 0px 0px 8px #dd7048;
 }
